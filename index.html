@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./sass/main.css" />
+</head>
+
+<body>
+
+    <h2>Sweet Alert</h2>
+
+    <!-- Trigger -->
+    <button id="myBtn">Click Me!</button>
+    <button id="myPromptBtn" onclick="showPrompt()">Prompt</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p class="messageTitle">Here is my sweet Alert!</p>
+            <p class="message"> It's pretty, isn't it? </p>
+            <button class="close">OK</button>
+        </div>
+
+    </div>
+
+    <!-- Propmpt Modal -->
+    <div id="myPromptModal" class="promptModal">
+        <!-- Modal Content -->
+        <div id="promptContent" class="prompt-content">
+            <p class="messageTitle">An input!</p>
+            <p class="message"> Write Something interesting? </p>
+            <div> <input id="userMessage" type="text" placeholder="Write Something"/> </div>
+            <div class="buttonContainer">
+            <button class="closePrompt">Cancel</button>
+            <button class="showUserPromptBtn">OK</button>
+            </div>
+        </div>
+        <div id="userPromptContent" class="prompt-userContent">
+            <p class="messageTitle">Nice!</p>
+            <p id="promptMessage"class="message"></p>
+            <button class="closeUserContentPrompt">OK</button>
+        </div>
+    </div>
+</body>
+
+    <script src="./js/main.js" type="text/javascript">
+    </script>
+
+</html>
